@@ -3,10 +3,10 @@ declare(strict_types=1);
 
 session_start();
 
-$DB_HOST = '';
-$DB_NAME = '';
-$DB_USER = '';
-$DB_PASS = '';
+$DB_HOST = 'localhost';
+$DB_NAME = 'forum';
+$DB_USER = 'root';
+$DB_PASS = 'pass';
 
 $pdo = new PDO(
     "mysql:host={$DB_HOST};dbname={$DB_NAME};charset=utf8mb4",
